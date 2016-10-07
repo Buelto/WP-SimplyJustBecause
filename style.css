@@ -1,0 +1,229 @@
+/*
+Theme Name: SimplyJustBecause
+Author: Ibuelto
+author URI: IrvingBuelto.tech
+version : 1.0*/
+/*-----------------general Layout---------------*/
+body{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color:black;
+    background: url("whiteWall.jpg") no-repeat center fixed;
+   
+    
+}
+
+a:link,
+a:visited{
+    text-decoration: none;
+    color: black;
+}
+p{
+    line-Height:1.50em;
+}
+h2{font-family: 'Tangerine', cursive;
+    margin: 0px;
+    font-size:3em; 
+    
+}
+
+/*-----------------main Title-----------*/
+.main-title {
+    font-family: 'Tangerine', cursive;
+    font-weight: 700;
+    font-size:6em; 
+}
+
+.main-description{
+    font-family: 'Cardo', serif;
+    font-size:1.5em; 
+}
+
+.site-header{
+    border: solid red 1px;
+    margin-top: -70px;    
+ 
+    }
+/*-----------------Home page blog transparent Background---------------*/
+.home-blogs{
+    margin-top: 20px;
+    padding:40px;
+    background: rgba(248, 248, 255, .5);
+}
+/*---home page greyline blog divider----*/
+.seperator{
+    margin: 40px 0px;
+    max-height:500px;
+    max-width: 250px;
+    border: #d3d3d3 1px solid;
+}
+
+
+
+/*--header navigation--*/
+
+.sidenav {
+    font-family: 'Cardo', serif;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    
+    padding: 8px 8px 8px 32px;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav li {
+    list-style-type: none;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    margin:50px 0px 0px 100px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/*---Footer----*/
+.site-footer{
+    color: white;
+    margin-top: 40px;
+    background: #262626;
+    padding: 20px 0px;
+    width: 100%;
+   
+    
+}
+footer p {
+    display: inline-block;
+}
+
+/*--Footer navigation--*/
+.footer-nav li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0px 5px;
+    
+}
+
+.footer-nav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.footer-nav a { 
+    color: #818181;
+    transition: 0.3s
+}
+
+/*--category--*/
+article .category a{
+    /*--border:1px solid black;--*/
+    color:#696969;
+    margin-right: 3px;
+}
+
+article .category a:hover{
+color: black;
+}
+
+article .category{
+    font-size:14px;
+}
+article .post-info{
+    font-size:14px;
+    color:#696969;
+    
+}
+
+.readMore a { 
+    color: #818181;
+    transition: 0.3s
+}
+
+ .readMore a:hover{
+color: black;
+}
+
+/*---Img Style--*/
+
+img{
+    max-width: 100%;
+        height:auto;
+}
+
+/*-- Img Hover Effects--*/
+
+.hovereffect {
+    width: 100%;
+
+}
+
+
+/*-- search bar--*/
+
+div.hd-search{
+    overflow-x: hidden;
+    z-index: 2;
+    border: 1px solid green;
+    float:right;
+}
+
+
+.site-header .search-field {
+    
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	height: 37px;
+	margin: 25px 0px 0px 0px;
+	padding: 0 0 0 34px;
+	position: relative;
+	-webkit-transition: width 400ms ease, background 400ms ease;
+	transition:         width 400ms ease, background 400ms ease;
+	width: 0;
+}
+
+.site-header .search-field:focus {
+	background-color: #fff;
+	border: 2px solid #c3c0ab;
+	cursor: text;
+	outline: 0;
+	width: 400px;
+}
+.search-form
+.search-submit { 
+display:none;
+   
+}
+
+.search-form{
+     margin-right: 50px;
+}
+
