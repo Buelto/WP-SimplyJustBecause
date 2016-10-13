@@ -1,12 +1,5 @@
-<!-- controls home page-->
-<?php
-
-get_header();
-//loop through blogs
-if (have_posts()):
-while (have_posts()): the_post();?>
-   
-
+<!-- controls index.php archive.php & search.php-->
+       <!-- blog titles and content-->
  <article>
 
     <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
@@ -38,11 +31,3 @@ while (have_posts()): the_post();?>
     </a>
     <div class="seperator"></div>
 </article>
-
-<?php    
-endwhile;
-else:
-echo'<p> No content found</p> ';
-endif;
-get_footer();
-?>

@@ -1,4 +1,4 @@
-<!-- controls home page-->
+<!-- controls individual blogs-->
 <?php
 
 get_header();
@@ -11,10 +11,11 @@ while (have_posts()): the_post();?>
         <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
         <!-- author name/ publish date-->
-        <p class="post-info"><?php the_time('F jS, Y'); ?> |
-        
-        <!-- categories-->
-        <span class="category">
+        <p class="post-info">
+            <?php the_time('F jS, Y'); ?> |
+
+                <!-- categories-->
+                <span class="category">
             <?php
     $categories = get_the_category();
     $separator =" ";
@@ -26,13 +27,16 @@ while (have_posts()): the_post();?>
         echo $output;
     }
             ?></span></p>
-<?php the_content(); ?>
-<?php the_post_thumbnail('banner-image'); ?>
- 
-</article>
+        <div class="blog-words">
+            <?php the_content(); ?>
+        </div>
+        <?php the_post_thumbnail('banner-image'); ?>
+<!-- comment/discussion section-->
 
+    </article>
 
-<?php
+<?php comments_template();?>
+    <?php
 endwhile;
 else:echo'<p> No content found</p> ';
 endif;

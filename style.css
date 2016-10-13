@@ -3,62 +3,80 @@ Theme Name: SimplyJustBecause
 Author: Ibuelto
 author URI: IrvingBuelto.tech
 version : 1.0*/
+
+
 /*-----------------general Layout---------------*/
-body{
+
+body {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    font-size: 16px;
-    color:black;
+    font-size: 18px;
+    color: black;
     background: url("whiteWall.jpg") no-repeat center fixed;
-   
-    
 }
 
 a:link,
-a:visited{
+a:visited {
     text-decoration: none;
     color: black;
 }
-p{
-    line-Height:1.50em;
-}
-h2{font-family: 'Tangerine', cursive;
-    margin: 0px;
-    font-size:3em; 
-    
+
+p {
+    line-Height: 1.65em;
 }
 
+h2 {
+    font-family: 'Tangerine', cursive;
+    margin: 0px;
+    font-size: 3em;
+}
+
+
+/*-- blog set up--*/
+
+.blog-words {
+    margin: 20px 0px 40px 0px;
+}
+
+
 /*-----------------main Title-----------*/
+
 .main-title {
     font-family: 'Tangerine', cursive;
     font-weight: 700;
-    font-size:6em; 
+    font-size: 6em;
 }
 
-.main-description{
+.main-description {
     font-family: 'Cardo', serif;
-    font-size:1.5em; 
+    font-size: 1.5em;
 }
 
-.site-header{
-    border: solid red 1px;
-    margin-top: -70px;    
- 
-    }
+.site-header {
+    position: relative;
+    margin-top;
+    40px;
+    max-width: 100%;
+}
+
+
 /*-----------------Home page blog transparent Background---------------*/
-.home-blogs{
+
+.home-blogs {
     margin-top: 20px;
-    padding:40px;
+    padding: 40px;
     background: rgba(248, 248, 255, .5);
 }
+
+
 /*---home page greyline blog divider----*/
-.seperator{
+
+.seperator {
     margin: 40px 0px;
-    max-height:500px;
+    max-height: 500px;
     max-width: 250px;
     border: #d3d3d3 1px solid;
 }
-
 
 
 /*--header navigation--*/
@@ -78,7 +96,6 @@ h2{font-family: 'Tangerine', cursive;
 }
 
 .sidenav a {
-    
     padding: 8px 8px 8px 32px;
     font-size: 25px;
     color: #818181;
@@ -90,7 +107,8 @@ h2{font-family: 'Tangerine', cursive;
     list-style-type: none;
 }
 
-.sidenav a:hover, .offcanvas a:focus{
+.sidenav a:hover,
+.offcanvas a:focus {
     color: #f1f1f1;
 }
 
@@ -103,127 +121,204 @@ h2{font-family: 'Tangerine', cursive;
 }
 
 #main {
+    position: absolute;
+    height: 40px;
     transition: margin-left .5s;
-    margin:50px 0px 0px 100px;
+    left: 10%;
+    top: 15%;
 }
 
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
 }
+
+
 /*---Footer----*/
-.site-footer{
+
+.site-footer {
     color: white;
     margin-top: 40px;
     background: #262626;
     padding: 20px 0px;
     width: 100%;
-   
-    
 }
+
 footer p {
     display: inline-block;
 }
 
+
 /*--Footer navigation--*/
-.footer-nav li{
+
+.footer-nav li {
     list-style-type: none;
     display: inline-block;
     padding: 0px 5px;
-    
 }
 
-.footer-nav a:hover, .offcanvas a:focus{
+.footer-nav a:hover,
+.offcanvas a:focus {
     color: #f1f1f1;
 }
 
-.footer-nav a { 
+.footer-nav a {
     color: #818181;
     transition: 0.3s
 }
 
+
 /*--category--*/
-article .category a{
+
+article .category a {
     /*--border:1px solid black;--*/
-    color:#696969;
+    color: #696969;
     margin-right: 3px;
 }
 
-article .category a:hover{
-color: black;
+article .category a:hover {
+    color: black;
 }
 
-article .category{
-    font-size:14px;
-}
-article .post-info{
-    font-size:14px;
-    color:#696969;
-    
+article .category {
+    font-size: 16px;
 }
 
-.readMore a { 
+article .post-info {
+    font-size: 16px;
+    color: #696969;
+}
+
+.readMore a {
     color: #818181;
     transition: 0.3s
 }
 
- .readMore a:hover{
-color: black;
+.readMore a:hover {
+    color: black;
 }
+
 
 /*---Img Style--*/
 
-img{
+img {
     max-width: 100%;
-        height:auto;
+    height: auto;
+    -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 }
+
 
 /*-- Img Hover Effects--*/
 
 .hovereffect {
     width: 100%;
-
 }
 
 
 /*-- search bar--*/
 
-div.hd-search{
-    overflow-x: hidden;
-    z-index: 2;
-    border: 1px solid green;
-    float:right;
+.hd-search {
+    font-size: 24px;
+    position: absolute;
+    right: 17%;
+    top: 18%;
+    float: right;
 }
 
-
 .site-header .search-field {
-    
-	background-color: transparent;
-	border: none;
-	cursor: pointer;
-	height: 37px;
-	margin: 25px 0px 0px 0px;
-	padding: 0 0 0 34px;
-	position: relative;
-	-webkit-transition: width 400ms ease, background 400ms ease;
-	transition:         width 400ms ease, background 400ms ease;
-	width: 0;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    height: 37px;
+    padding: 0 0 0 34px;
+    position: relative;
+    -webkit-transition: width 400ms ease, background 400ms ease;
+    transition: width 400ms ease, background 400ms ease;
+    width: 0;
 }
 
 .site-header .search-field:focus {
-	background-color: #fff;
-	border: 2px solid #c3c0ab;
-	cursor: text;
-	outline: 0;
-	width: 400px;
-}
-.search-form
-.search-submit { 
-display:none;
-   
+    background-color: #fff;
+    border: 2px solid #c3c0ab;
+    cursor: text;
+    outline: 0;
+    width: 300px;
 }
 
-.search-form{
-     margin-right: 50px;
+.search-form .search-submit {
+    display: none;
 }
 
+.search-form {
+    margin-right: 15px;
+}
+
+.social {
+    left: 83%;
+    top: 15%;
+    width: 100%;
+    position: absolute;
+}
+
+.social i {
+    padding: 10px 5px 0px 5px;
+    font-size: 24px;
+}
+
+.titolo {
+    padding: 60px 0px 40px 0px;
+    margin-top: 60px;
+}
+
+
+/*-- Comment Design--*/
+
+.commentlist li {
+    list-style-type: none;
+}
+
+#comment {
+    max-width: 100%;
+    -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+
+
+.comment-author {
+    display: inline-block;
+    font-weight: bold;
+    float: left;
+    font-size: 16px;
+    margin: 0px;
+}
+
+
+/*--dates--*/
+
+.commentmetadata {
+    text-indent: 5px;
+    display: inline-block;
+    font-size: 14px;
+    color: #696969;
+    margin: 7px 0px 0px 0px;
+}
+
+.comment-body {
+    border: 1px solid #d2d2d2;
+    -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    margin-bottom: 10px;
+    padding: 20px;
+    background: #f0f0f0;
+    font-size: 16px;
+    word-wrap: break-word;
+}

@@ -1,4 +1,4 @@
-<!-- controls home page-->
+<!-- controls about page-->
 <?php
 
 get_header();
@@ -10,7 +10,9 @@ while (have_posts()): the_post();?>
 <div class="text-center">
 <h2><?php the_title(); ?></h2>
 </div>
+<div class="blog-words">
 <?php the_content(); ?>
+    </div>
 <div class="seperator"></div>
 </article>
 
